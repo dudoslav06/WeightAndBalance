@@ -1,0 +1,15 @@
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\bin\Debug\WeightAndBalance.exe.config
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\bin\Debug\WeightAndBalance.exe
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\bin\Debug\WeightAndBalance.pdb
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.csprojAssemblyReference.cache
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.Form1.resources
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.Properties.Resources.resources
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.csproj.GenerateResource.cache
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.csproj.CoreCompileInputs.cache
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.exe
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.pdb
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.Flightinfo.resources
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.Home.resources
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.AddLoad.resources
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.help.resources
+D:\projects\AircraftWeightAndBalanceSystems\WeightAndBalance\obj\Debug\WeightAndBalance.WB.resources

@@ -31,18 +31,18 @@ namespace WeightAndBalance
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnhome = new System.Windows.Forms.Button();
-            this.btnflightdata = new System.Windows.Forms.Button();
-            this.btnaddload = new System.Windows.Forms.Button();
-            this.btncalculate = new System.Windows.Forms.Button();
             this.btnhelp = new System.Windows.Forms.Button();
+            this.btncalculate = new System.Windows.Forms.Button();
+            this.btnaddload = new System.Windows.Forms.Button();
+            this.btnflightdata = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.home1 = new WeightAndBalance.Home();
-            this.flightinfo1 = new WeightAndBalance.Flightinfo();
-            this.addLoad1 = new WeightAndBalance.AddLoad();
-            this.help1 = new WeightAndBalance.help();
             this.wb1 = new WeightAndBalance.WB();
+            this.help1 = new WeightAndBalance.help();
+            this.addLoad1 = new WeightAndBalance.AddLoad();
+            this.flightinfo1 = new WeightAndBalance.Flightinfo();
+            this.home1 = new WeightAndBalance.Home();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,15 +61,61 @@ namespace WeightAndBalance
             this.panel1.Size = new System.Drawing.Size(153, 661);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // btnhelp
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 141);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnhelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhelp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnhelp.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnhelp.Location = new System.Drawing.Point(0, 428);
+            this.btnhelp.Margin = new System.Windows.Forms.Padding(0);
+            this.btnhelp.Name = "btnhelp";
+            this.btnhelp.Size = new System.Drawing.Size(153, 54);
+            this.btnhelp.TabIndex = 4;
+            this.btnhelp.Text = "Help";
+            this.btnhelp.UseVisualStyleBackColor = true;
+            this.btnhelp.Click += new System.EventHandler(this.btnhelp_Click);
+            // 
+            // btncalculate
+            // 
+            this.btncalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalculate.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btncalculate.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btncalculate.Location = new System.Drawing.Point(0, 359);
+            this.btncalculate.Margin = new System.Windows.Forms.Padding(0);
+            this.btncalculate.Name = "btncalculate";
+            this.btncalculate.Size = new System.Drawing.Size(153, 63);
+            this.btncalculate.TabIndex = 3;
+            this.btncalculate.Text = "Weight and balance";
+            this.btncalculate.UseVisualStyleBackColor = true;
+            this.btncalculate.Click += new System.EventHandler(this.btncalculate_Click);
+            // 
+            // btnaddload
+            // 
+            this.btnaddload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddload.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnaddload.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnaddload.Location = new System.Drawing.Point(0, 299);
+            this.btnaddload.Margin = new System.Windows.Forms.Padding(0);
+            this.btnaddload.Name = "btnaddload";
+            this.btnaddload.Size = new System.Drawing.Size(153, 54);
+            this.btnaddload.TabIndex = 2;
+            this.btnaddload.Text = "Add Load";
+            this.btnaddload.UseVisualStyleBackColor = true;
+            this.btnaddload.Click += new System.EventHandler(this.btnaddload_Click);
+            // 
+            // btnflightdata
+            // 
+            this.btnflightdata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnflightdata.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnflightdata.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnflightdata.Location = new System.Drawing.Point(0, 239);
+            this.btnflightdata.Margin = new System.Windows.Forms.Padding(0);
+            this.btnflightdata.Name = "btnflightdata";
+            this.btnflightdata.Size = new System.Drawing.Size(153, 54);
+            this.btnflightdata.TabIndex = 1;
+            this.btnflightdata.Text = "Flight info";
+            this.btnflightdata.UseVisualStyleBackColor = true;
+            this.btnflightdata.Click += new System.EventHandler(this.btnflightdata_Click);
             // 
             // btnhome
             // 
@@ -86,61 +132,15 @@ namespace WeightAndBalance
             this.btnhome.UseVisualStyleBackColor = true;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
-            // btnflightdata
+            // pictureBox1
             // 
-            this.btnflightdata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnflightdata.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnflightdata.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnflightdata.Location = new System.Drawing.Point(0, 239);
-            this.btnflightdata.Margin = new System.Windows.Forms.Padding(0);
-            this.btnflightdata.Name = "btnflightdata";
-            this.btnflightdata.Size = new System.Drawing.Size(153, 54);
-            this.btnflightdata.TabIndex = 1;
-            this.btnflightdata.Text = "Flight info";
-            this.btnflightdata.UseVisualStyleBackColor = true;
-            this.btnflightdata.Click += new System.EventHandler(this.btnflightdata_Click);
-            // 
-            // btnaddload
-            // 
-            this.btnaddload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddload.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnaddload.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnaddload.Location = new System.Drawing.Point(0, 299);
-            this.btnaddload.Margin = new System.Windows.Forms.Padding(0);
-            this.btnaddload.Name = "btnaddload";
-            this.btnaddload.Size = new System.Drawing.Size(153, 54);
-            this.btnaddload.TabIndex = 2;
-            this.btnaddload.Text = "Add Load";
-            this.btnaddload.UseVisualStyleBackColor = true;
-            this.btnaddload.Click += new System.EventHandler(this.btnaddload_Click);
-            // 
-            // btncalculate
-            // 
-            this.btncalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalculate.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btncalculate.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btncalculate.Location = new System.Drawing.Point(0, 359);
-            this.btncalculate.Margin = new System.Windows.Forms.Padding(0);
-            this.btncalculate.Name = "btncalculate";
-            this.btncalculate.Size = new System.Drawing.Size(153, 63);
-            this.btncalculate.TabIndex = 3;
-            this.btncalculate.Text = "Weight and balance";
-            this.btncalculate.UseVisualStyleBackColor = true;
-            this.btncalculate.Click += new System.EventHandler(this.btncalculate_Click);
-            // 
-            // btnhelp
-            // 
-            this.btnhelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhelp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnhelp.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnhelp.Location = new System.Drawing.Point(0, 428);
-            this.btnhelp.Margin = new System.Windows.Forms.Padding(0);
-            this.btnhelp.Name = "btnhelp";
-            this.btnhelp.Size = new System.Drawing.Size(153, 54);
-            this.btnhelp.TabIndex = 4;
-            this.btnhelp.Text = "Help";
-            this.btnhelp.UseVisualStyleBackColor = true;
-            this.btnhelp.Click += new System.EventHandler(this.btnhelp_Click);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(305, 141);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -153,26 +153,13 @@ namespace WeightAndBalance
             this.label1.Text = "Powered by Aircraft Weight and Balace Systems";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // home1
+            // wb1
             // 
-            this.home1.Location = new System.Drawing.Point(154, 153);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(650, 480);
-            this.home1.TabIndex = 6;
-            // 
-            // flightinfo1
-            // 
-            this.flightinfo1.Location = new System.Drawing.Point(154, 153);
-            this.flightinfo1.Name = "flightinfo1";
-            this.flightinfo1.Size = new System.Drawing.Size(650, 480);
-            this.flightinfo1.TabIndex = 7;
-            // 
-            // addLoad1
-            // 
-            this.addLoad1.Location = new System.Drawing.Point(154, 153);
-            this.addLoad1.Name = "addLoad1";
-            this.addLoad1.Size = new System.Drawing.Size(650, 480);
-            this.addLoad1.TabIndex = 8;
+            this.wb1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.wb1.Location = new System.Drawing.Point(154, 153);
+            this.wb1.Name = "wb1";
+            this.wb1.Size = new System.Drawing.Size(650, 480);
+            this.wb1.TabIndex = 10;
             // 
             // help1
             // 
@@ -181,12 +168,28 @@ namespace WeightAndBalance
             this.help1.Size = new System.Drawing.Size(650, 480);
             this.help1.TabIndex = 9;
             // 
-            // wb1
+            // addLoad1
             // 
-            this.wb1.Location = new System.Drawing.Point(154, 153);
-            this.wb1.Name = "wb1";
-            this.wb1.Size = new System.Drawing.Size(650, 480);
-            this.wb1.TabIndex = 10;
+            this.addLoad1.Location = new System.Drawing.Point(154, 153);
+            this.addLoad1.Name = "addLoad1";
+            this.addLoad1.Size = new System.Drawing.Size(650, 480);
+            this.addLoad1.TabIndex = 8;
+            // 
+            // flightinfo1
+            // 
+            this.flightinfo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.flightinfo1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.flightinfo1.Location = new System.Drawing.Point(154, 153);
+            this.flightinfo1.Name = "flightinfo1";
+            this.flightinfo1.Size = new System.Drawing.Size(650, 480);
+            this.flightinfo1.TabIndex = 7;
+            // 
+            // home1
+            // 
+            this.home1.Location = new System.Drawing.Point(154, 153);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(650, 480);
+            this.home1.TabIndex = 6;
             // 
             // Form1
             // 
@@ -206,6 +209,7 @@ namespace WeightAndBalance
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "ASL - Weight and balance";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

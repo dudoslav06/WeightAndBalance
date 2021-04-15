@@ -29,16 +29,28 @@ namespace WeightAndBalance
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-            //boxdate.Value.
-            boxfltnumber.Text = "";
-            boxorgin.Text = "";
-            boxdestination.Text = "";
-            boxregistration.Text = "";
-            boxcrew.Text = "2";
-            boxbf.Text = "";
-            boxtaxi.Text = "";
-            boxtrip.Text = "";
+            Cleardata();
+        }
 
+        private void Cleardata()
+        {
+            DialogResult result = MessageBox.Show("Are you sure to clear all?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                //boxdate.Value.
+                boxfltnumber.Text = "";
+                boxorgin.Text = "";
+                boxdestination.Text = "";
+                boxregistration.Text = "";
+                boxcrew.Text = "2";
+                boxbf.Text = "";
+                boxtaxi.Text = "";
+                boxtrip.Text = "";
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

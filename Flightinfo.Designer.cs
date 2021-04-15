@@ -49,13 +49,14 @@ namespace WeightAndBalance
             this.boxcrew = new System.Windows.Forms.ComboBox();
             this.btnclear = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(203, 64);
+            this.label1.Location = new System.Drawing.Point(291, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 22);
             this.label1.TabIndex = 0;
@@ -65,7 +66,7 @@ namespace WeightAndBalance
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(152, 179);
+            this.label2.Location = new System.Drawing.Point(235, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 1;
@@ -76,7 +77,7 @@ namespace WeightAndBalance
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(130, 102);
+            this.label3.Location = new System.Drawing.Point(213, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 22);
             this.label3.TabIndex = 2;
@@ -86,7 +87,7 @@ namespace WeightAndBalance
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(203, 141);
+            this.label4.Location = new System.Drawing.Point(286, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 22);
             this.label4.TabIndex = 3;
@@ -96,7 +97,7 @@ namespace WeightAndBalance
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(147, 220);
+            this.label5.Location = new System.Drawing.Point(230, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 22);
             this.label5.TabIndex = 4;
@@ -106,7 +107,7 @@ namespace WeightAndBalance
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(205, 259);
+            this.label6.Location = new System.Drawing.Point(288, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 22);
             this.label6.TabIndex = 5;
@@ -116,7 +117,7 @@ namespace WeightAndBalance
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(165, 298);
+            this.label7.Location = new System.Drawing.Point(248, 283);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 22);
             this.label7.TabIndex = 6;
@@ -126,7 +127,7 @@ namespace WeightAndBalance
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(180, 334);
+            this.label8.Location = new System.Drawing.Point(263, 319);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 22);
             this.label8.TabIndex = 7;
@@ -136,7 +137,7 @@ namespace WeightAndBalance
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(183, 373);
+            this.label9.Location = new System.Drawing.Point(266, 358);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(81, 22);
             this.label9.TabIndex = 8;
@@ -146,18 +147,18 @@ namespace WeightAndBalance
             // 
             this.boxdate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.boxdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.boxdate.Location = new System.Drawing.Point(270, 63);
+            this.boxdate.Location = new System.Drawing.Point(353, 53);
             this.boxdate.MaxDate = new System.DateTime(2029, 12, 31, 0, 0, 0, 0);
             this.boxdate.MinDate = new System.DateTime(2021, 4, 12, 18, 37, 48, 0);
             this.boxdate.Name = "boxdate";
             this.boxdate.Size = new System.Drawing.Size(110, 23);
             this.boxdate.TabIndex = 9;
-            this.boxdate.Value = new System.DateTime(2021, 4, 12, 18, 38, 10, 0);
+            this.boxdate.Value = new System.DateTime(2021, 4, 15, 17, 42, 52, 0);
             // 
             // boxfltnumber
             // 
             this.boxfltnumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.boxfltnumber.Location = new System.Drawing.Point(270, 101);
+            this.boxfltnumber.Location = new System.Drawing.Point(353, 86);
             this.boxfltnumber.Name = "boxfltnumber";
             this.boxfltnumber.Size = new System.Drawing.Size(110, 23);
             this.boxfltnumber.TabIndex = 10;
@@ -165,7 +166,7 @@ namespace WeightAndBalance
             // boxorgin
             // 
             this.boxorgin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.boxorgin.Location = new System.Drawing.Point(270, 142);
+            this.boxorgin.Location = new System.Drawing.Point(353, 127);
             this.boxorgin.Name = "boxorgin";
             this.boxorgin.Size = new System.Drawing.Size(110, 23);
             this.boxorgin.TabIndex = 11;
@@ -173,7 +174,7 @@ namespace WeightAndBalance
             // boxdestination
             // 
             this.boxdestination.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.boxdestination.Location = new System.Drawing.Point(270, 181);
+            this.boxdestination.Location = new System.Drawing.Point(353, 166);
             this.boxdestination.Name = "boxdestination";
             this.boxdestination.Size = new System.Drawing.Size(110, 23);
             this.boxdestination.TabIndex = 12;
@@ -181,7 +182,7 @@ namespace WeightAndBalance
             // boxbf
             // 
             this.boxbf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.boxbf.Location = new System.Drawing.Point(270, 298);
+            this.boxbf.Location = new System.Drawing.Point(353, 283);
             this.boxbf.Name = "boxbf";
             this.boxbf.Size = new System.Drawing.Size(110, 23);
             this.boxbf.TabIndex = 15;
@@ -189,7 +190,7 @@ namespace WeightAndBalance
             // boxtaxi
             // 
             this.boxtaxi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.boxtaxi.Location = new System.Drawing.Point(270, 336);
+            this.boxtaxi.Location = new System.Drawing.Point(353, 321);
             this.boxtaxi.Name = "boxtaxi";
             this.boxtaxi.Size = new System.Drawing.Size(110, 23);
             this.boxtaxi.TabIndex = 16;
@@ -197,7 +198,7 @@ namespace WeightAndBalance
             // boxtrip
             // 
             this.boxtrip.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.boxtrip.Location = new System.Drawing.Point(270, 374);
+            this.boxtrip.Location = new System.Drawing.Point(353, 359);
             this.boxtrip.Name = "boxtrip";
             this.boxtrip.Size = new System.Drawing.Size(110, 23);
             this.boxtrip.TabIndex = 17;
@@ -217,7 +218,7 @@ namespace WeightAndBalance
             "EI-STP",
             "EI-STS",
             "EI-STU"});
-            this.boxregistration.Location = new System.Drawing.Point(270, 220);
+            this.boxregistration.Location = new System.Drawing.Point(353, 205);
             this.boxregistration.Name = "boxregistration";
             this.boxregistration.Size = new System.Drawing.Size(110, 25);
             this.boxregistration.TabIndex = 13;
@@ -231,7 +232,7 @@ namespace WeightAndBalance
             this.boxcrew.Items.AddRange(new object[] {
             "2",
             "3"});
-            this.boxcrew.Location = new System.Drawing.Point(270, 259);
+            this.boxcrew.Location = new System.Drawing.Point(353, 244);
             this.boxcrew.Name = "boxcrew";
             this.boxcrew.Size = new System.Drawing.Size(110, 25);
             this.boxcrew.TabIndex = 14;
@@ -244,7 +245,7 @@ namespace WeightAndBalance
             this.btnclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclear.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnclear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnclear.Location = new System.Drawing.Point(158, 416);
+            this.btnclear.Location = new System.Drawing.Point(246, 422);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(101, 33);
             this.btnclear.TabIndex = 19;
@@ -258,18 +259,29 @@ namespace WeightAndBalance
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnsave.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnsave.Location = new System.Drawing.Point(270, 416);
+            this.btnsave.Location = new System.Drawing.Point(353, 422);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(110, 33);
             this.btnsave.TabIndex = 18;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(14, 11);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(172, 22);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Flight informations";
+            // 
             // Flightinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.boxcrew);
@@ -320,5 +332,6 @@ namespace WeightAndBalance
         private System.Windows.Forms.ComboBox boxcrew;
         private System.Windows.Forms.Button btnclear;
         private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Label label10;
     }
 }
