@@ -32,6 +32,8 @@ namespace WeightAndBalance
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WB));
             this.label1 = new System.Windows.Forms.Label();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.ContainersInOrder = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -54,10 +56,32 @@ namespace WeightAndBalance
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // ContainersInOrder
+            // 
+            this.ContainersInOrder.AutoSize = true;
+            this.ContainersInOrder.Location = new System.Drawing.Point(23, 49);
+            this.ContainersInOrder.Name = "ContainersInOrder";
+            this.ContainersInOrder.Size = new System.Drawing.Size(0, 13);
+            this.ContainersInOrder.TabIndex = 1;
+            this.ContainersInOrder.Click += new System.EventHandler(this.ContainersInOrder_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // WB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CausesValidation = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ContainersInOrder);
             this.Controls.Add(this.label1);
             this.Name = "WB";
             this.Size = new System.Drawing.Size(650, 480);
@@ -70,5 +94,7 @@ namespace WeightAndBalance
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label ContainersInOrder;
+        public System.Windows.Forms.Label label2;
     }
 }

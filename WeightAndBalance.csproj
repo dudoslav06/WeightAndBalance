@@ -53,6 +53,7 @@
     <Compile Include="AddLoad.Designer.cs">
       <DependentUpon>AddLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContainersFile.cs" />
     <Compile Include="Flightinfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
